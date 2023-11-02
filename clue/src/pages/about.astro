@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import cd from "../images/cd.png";
+---
+
+<Layout title="Welcome to Astro.">
+	<body>
+
+		<a href="/">Home</a> <br/>
+		<a href="/about/">About</a>
+
+		<div>
+			<a href="/">
+				<Image
+				src={cd}
+				alt="A bird sitting on a nest of eggs."
+				width={350}
+				height={350}
+				transition:name="img"        
+				/>
+			</a>			
+		</div>	
+		<h1>My Astro Site</h1>
+		<h1>About Me</h1>
+		<h2>... and my new Astro site!</h2>
+	  
+		<p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+	  
+		<p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+	
+      />
+	  </body>
+</Layout>
+
+<style>
+
+</style>

@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import cd from "../images/cd.png";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <div class="container mx-auto text-center mt-5 text-3xl">
+      <h1>Index Page</h1>
+      <p class="text-justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+        itaque, vero officiis iusto voluptatem et a rem doloribus nostrum modi
+        aut hic quod velit deleniti numquam sunt animi eveniet illum ipsam non
+        minus in cumque optio? Consectetur at assumenda excepturi quod ducimus
+        dolores labore corrupti molestias, maiores minus? Illo, reiciendis!
+      </p>
+    </div>
+	
+    <div class="container mx-auto mt-10">
+      <p>This is an image</p>
+      <a href="/about">About
+      <Image
+        src={cd}
+        alt="A bird sitting on a nest of eggs."
+        width={350}
+        height={350}
+        transition:name="img"        
+      /></a>
+    </div>
+  </main>
+</Layout>
+
+<style></style>
